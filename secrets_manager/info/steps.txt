@@ -2,7 +2,8 @@
 gpg --generate-key
 #------------------------------------------------------------------------
 #export public key
-gpg --output shibu.narayanan@oracle.com --armor --export shibu.narayanan@oracle.com
+gpg --output shibu.narayanan@oracle.com    --armor --export shibu.narayanan@oracle.com
+gpg --output tnshibu@yahoo.com             --armor --export tnshibu@yahoo.com
 #------------------------------------------------------------------------
 import_all_users_public_keys.sh
 #------------------------------------------------------------------------
