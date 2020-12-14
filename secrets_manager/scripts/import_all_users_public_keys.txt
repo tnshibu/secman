@@ -1,0 +1,6 @@
+gpg --import ../public_keys/tnshibu@yahoo.com
+gpg --import ../public_keys/shibu.narayanan@oracle.com
+
+
+gpg --sign-key tnshibu@yahoo.com
+gpg --sign-key shibu.narayanan@oracle.com
