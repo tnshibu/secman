@@ -2,11 +2,11 @@
 gpg --generate-key
 #------------------------------------------------------------------------
 #export public key
-gpg --output shibu.narayanan@oracle.com    --armor --export shibu.narayanan@oracle.com
-gpg --output tnshibu@yahoo.com             --armor --export tnshibu@yahoo.com
+gpg --output shibu.narayanan@oracle.com    --armor --export shibu.narayanan@oracle.com.asc
+gpg --output tnshibu@yahoo.com             --armor --export tnshibu@yahoo.com.asc
 #------------------------------------------------------------------------
-gpg --import secrets_manager/public_keys/tnshibu@yahoo.com
-gpg --import secrets_manager/public_keys/shibu.narayanan@oracle.com
+gpg --import secrets_manager/public_keys/tnshibu@yahoo.com.asc
+gpg --import secrets_manager/public_keys/shibu.narayanan@oracle.com.asc
 
 gpg --sign-key tnshibu@yahoo.com
 gpg --sign-key shibu.narayanan@oracle.com
