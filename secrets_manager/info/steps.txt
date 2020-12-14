@@ -5,7 +5,11 @@ gpg --generate-key
 gpg --output shibu.narayanan@oracle.com    --armor --export shibu.narayanan@oracle.com
 gpg --output tnshibu@yahoo.com             --armor --export tnshibu@yahoo.com
 #------------------------------------------------------------------------
-import_all_users_public_keys.sh
+gpg --import secrets_manager/public_keys/tnshibu@yahoo.com
+gpg --import secrets_manager/public_keys/shibu.narayanan@oracle.com
+
+gpg --sign-key tnshibu@yahoo.com
+gpg --sign-key shibu.narayanan@oracle.com
 #------------------------------------------------------------------------
 
 #------------------------------------------------------------------------
