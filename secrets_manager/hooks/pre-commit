@@ -15,10 +15,11 @@ while read oneFile; do
         exit -1
     else
         if [[ -f ${FILE}.encrypted ]]; then
-            echo "encrypted secrets file $oneFile exists.  all good."
+            echo "encrypted secrets file $oneFile.encrypted exists.  all good.  proceeding with commit..."
             exit 
         else
-            echo "encrypted secrets file $oneFile does not exist, neither is its encrypted file.  aborting commit..."
+            echo "secrets file $oneFile does not exist, neither is its encrypted file.  aborting commit..."
+            echo "if secrets file $oneFile is no longer used in this project, please update 'secrets_manager\secrets_file.txt' accordingly.  aborting commit..."
             exit -2
         fi
     fi    
