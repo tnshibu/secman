@@ -1,0 +1,10 @@
+gpg: C:/Users/STNARAYA/AppData/Roaming/gnupg/trustdb.gpg: trustdb created
+gpg: key D1F2697D9B8938A8 marked as ultimately trusted
+gpg: directory 'C:/Users/STNARAYA/AppData/Roaming/gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as 'C:/Users/STNARAYA/AppData/Roaming/gnupg/openpgp-revocs.d\BEDE14BE76DEB416C54E60BED1F2697D9B8938A8.rev'
+public and secret key created and signed.
+
+pub   rsa2048 2020-12-14 [SC] [expires: 2022-12-14]
+      BEDE14BE76DEB416C54E60BED1F2697D9B8938A8
+uid                      Shibu TN <tnshibu@yahoo.com>
+sub   rsa2048 2020-12-14 [E] [expires: 2022-12-14]
